@@ -1,0 +1,598 @@
+/* Google Font Import - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+}
+
+*a{
+  text-decoration: none !important;
+}
+
+:root {
+  --backgroundColor: #131414;
+  --sidebar: #191b1d;
+  --sidebar-color: #5e5f61;
+  --sidebar-brand-color: #b1b1b3;
+  --sidebar-anchor-color: #1f2123;
+  --sidebar-anchor-hover-color: #ededed;
+  --theme-button: #0095f6;
+  --navbar-theme: #191b1d;
+  --navlink-bar-theme: #27292f;
+  --input-theme: #27292f;
+  --text-color:  #ffffff;
+  --text-gray:#5e5f61;
+  --trending:#191b1d;
+}
+
+/* Width of the scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--sidebar);
+  /* Background color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--sidebar-anchor-color);
+  /* Background color of the handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--sidebar-brand-color);
+  /* Background color of the handle on hover */
+}
+
+body {
+  background-color: var(
+    --backgroundColor
+  ) !important; /* Correct the variable name */
+  height: 20px; /* Correct the property and remove the comma */
+  overflow-x: hidden;
+  font-family: 'Raleway', sans-serif;
+}
+
+.sidebar {
+  position: fixed;
+  background-color: var(--sidebar);
+  height: 100vh;
+  width: 250px !important;
+  color: var(--sidebar-color);
+  padding-bottom: 20px !important;
+  overflow-x: auto;
+  
+}
+
+.sidebar .content {
+  display: inline-block;
+  align-items: start;
+  justify-content: start;
+  align-content: start;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.sidebar .content .brand {
+  color: var(--sidebar-brand-color);
+  display: block;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.sidebar input {
+  width: calc(250px - 30px);
+  height: 50px;
+  margin-top: 18px;
+  border-radius: 5px;
+  background-color: var(--input-theme);
+  border: none;
+  font-size: 14px;
+  outline: none;
+}
+
+.sidebar input:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+.sidebar .content .menu .menu-links-item {
+  position: absolute;
+}
+.sidebar .content .menu .menu-links-item .menu-item a{
+  text-decoration: none;
+}
+
+.sidebar .content .menu .menu-links-item .menu-item a:hover {
+  display: block;
+  margin: 10px 0px;
+  width: calc(250px - 30px);
+  font-size: 14px;
+  padding: 14px;
+  background-color: var(--theme-button);
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--sidebar-anchor-hover-color);
+  box-shadow: 2px 2px 5px rgba(76, 206, 242, 0.2),
+    /* Top left corner shadow */ -2px 2px 5px rgba(76, 206, 242, 0.2),
+    /* Top right corner shadow */ -2px -2px 5px rgba(76, 206, 242, 0.2),
+    /* Bottom right corner shadow */ 2px -2px 5px rgba(76, 206, 242, 0.2);
+}
+
+.sidebar .content .menu .menu-links-item .menu-item a:active {
+  color: var(--sidebar-anchor-hover-color);
+}
+
+.sidebar .content .get-app img {
+  border-radius: 5px;
+  background-color: #3f414a;
+  width: calc(250px - 30px);
+}
+
+.sidebar
+  .content
+  .menu
+  .menu-links-item
+  .theme
+  .menu-item
+  .menu-list
+  .menu-list-span {
+  background-color: var(--theme-button);
+  display: block;
+  padding: 10px;
+  width: 100%;
+  border-radius: 5px;
+  color: var(--sidebar-anchor-hover-color);
+  font-weight: bold;
+}
+
+.sidebar .content .get-app-p {
+  color: var(--sidebar-brand-color);
+  display: block;
+  font-weight: bold;
+  font-size: 20px;
+  margin: 10px;
+}
+
+@media (max-width: 1200px) {
+  .sidebar {
+    display: none;
+  }
+  .app-content {
+    margin-left: 0px !important;
+  }
+}
+
+.sidebar .content .menu .menu-links-item .menu-item .menu-list {
+  display: block;
+  margin: 10px 0px;
+  width: calc(250px - 30px);
+  font-size: 14px;
+  padding: 14px;
+  color: #4f4f50;
+  border-radius: 5px;
+  background-color: var(--sidebar-anchor-color);
+}
+
+.app-content {
+  margin-left: 250px;
+}
+.app-content .app-content-section{
+
+}
+.app-content .navbar {
+  background-color: var(--navbar-theme);
+  height: fit-content;
+  position: sticky;
+}
+
+.app-content .navbar .contents .nav-links-bar {
+  background-color: var(--navlink-bar-theme);
+  border-radius: 5px;
+}
+
+.app-content .navbar .contents .nav-links-bar .menu-item a {
+  display: flex;
+  margin: 10px 0px;
+  margin-left: 10px;
+  width: calc(250px - 100px);
+  font-size: 13px;
+  padding: 10px;
+  background-color: var(--sidebar-anchor-color);
+  border-radius: 5px;
+  color: var(--sidebar-anchor-hover-color);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+   text-decoration: none;
+}
+
+.app-content .navbar .contents .nav-links-bar .menu-item a:hover {
+  background-color: var(--theme-button);
+  box-shadow: 2px 2px 5px rgba(76, 206, 242, 0.2),
+    /* Top left corner shadow */ -2px 2px 5px rgba(76, 206, 242, 0.2),
+    /* Top right corner shadow */ -2px -2px 5px rgba(76, 206, 242, 0.2),
+    /* Bottom right corner shadow */ 2px -2px 5px rgba(76, 206, 242, 0.2);
+}
+
+.app-content .navbar .contents .nav-links-bar .menu-item a:last-child {
+  margin-right: 10px;
+}
+
+.first-child-styled {
+  background-color: var(--theme-button);
+  box-shadow: 2px 2px 5px rgba(76, 206, 242, 0.2),
+    /* Top left corner shadow */ -2px 2px 5px rgba(76, 206, 242, 0.2),
+    /* Top right corner shadow */ -2px -2px 5px rgba(76, 206, 242, 0.2),
+    /* Bottom right corner shadow */ 2px -2px 5px rgba(76, 206, 242, 0.2);
+}
+
+.app-content .navbar .contents .social-links i {
+  color: var(--sidebar-anchor-hover-color);
+  background-color: var(--navlink-bar-theme);
+  padding: 14px 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  text-align: center;
+}
+.app-content .navbar .contents .social-links i:hover {
+  background-color: var(--theme-button);
+  box-shadow: 2px 2px 5px rgba(76, 206, 242, 0.2),
+    /* Top left corner shadow */ -2px 2px 5px rgba(76, 206, 242, 0.2),
+    /* Top right corner shadow */ -2px -2px 5px rgba(76, 206, 242, 0.2),
+    /* Bottom right corner shadow */ 2px -2px 5px rgba(76, 206, 242, 0.2);
+}
+.app-content .navbar .contents .user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-left: 3px;
+}
+
+.app-content .main {
+  margin-left: 80px !important;
+
+}
+
+.app-content .post{
+  background-color: var(--sidebar);
+  padding: 15px;
+  border-radius: 5px;
+
+}
+
+.app-content .post .content .user img{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.app-content .post .content input {
+  width: 100%;
+  border-radius: 5px;
+  background-color: var(--input-theme);
+  border: none;
+  font-size: 14px;
+  outline: none;
+  color: var(--sidebar-anchor-hover-color);
+}
+
+.app-content .post .content input:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.app-content .post .content .post-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.app-content .post .content .post-actions i {
+  color: var(--sidebar-anchor-hover-color);
+  background-color: var(--navlink-bar-theme);
+  padding: 10px 11px;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 15px;
+  margin-right: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.app-content .post .content .post-actions i:hover,.app-content .post .content .post-actions button:hover{
+background-color: var(--theme-button);
+box-shadow: 2px 2px 5px rgba(76, 206, 242, 0.2),
+  /* Top left corner shadow */ -2px 2px 5px rgba(76, 206, 242, 0.2),
+  /* Top right corner shadow */ -2px -2px 5px rgba(76, 206, 242, 0.2),
+  /* Bottom right corner shadow */ 2px -2px 5px rgba(76, 206, 242, 0.2);
+}
+
+.app-content .post .content .post-actions button{
+  margin: 10px 0px;
+  margin-left: 10px;
+  font-size: 13px;
+  padding: 10px 20px;
+  background-color: var(--sidebar-anchor-color);
+  border-radius: 5px;
+  color: var(--sidebar-anchor-hover-color);
+ 
+}
+
+
+.app-content .post .content  p{
+    color: var(--sidebar-anchor-hover-color);
+    font-size: 13px;
+}
+
+
+.app-content .second-sidebar{
+    height: 100vh; 
+    overflow-y: auto;
+    background-color: var(--backgroundColor);
+    padding-right:15px;
+    position: fixed;
+    padding-bottom: 100px;
+}
+
+.app-content .user-profile{
+    background-color: var(--sidebar);
+    padding: 20px;
+    border-radius: 5px;
+    height: 140px;
+}
+
+.app-content .user-profile h5{
+  font-weight: bold;
+  color: var(--text-color);
+  font-size: 18px;
+}
+
+.app-content .user-profile p , .app-content .user-profile a span{
+  color: var(--text-gray);
+  font-size: 13px;
+}
+
+.app-content .user-profile .net{
+  background-color: var(--input-theme);
+  height: 22px;
+  padding: 0px 10px;
+  color: var(--text-color);
+  font-size: 11px;
+  border-radius: 25px;
+  padding-top: 2px;
+  margin-left: 20px;
+  margin-top: -1px;
+  display: block;
+}
+.app-content .user-profile .user-content-1 .details a{
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: 0px;
+  margin-right: 5px;
+  color: var(--text-color);
+}
+
+.app-content .user-profile .user-content-2 a img{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.app-content .user-profile .user-content-2  i{
+  color: var(--text-color);
+}
+
+.app-content .trending{
+  margin: 0px 12px 10px 12px;
+}
+
+.app-content .trending .content .trending-group{
+  background-color: var(--trending);
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.app-content .trending .content .trending-group a{
+  text-decoration: none;
+  font-size:13px;
+  color: #0095f6;
+}
+
+.app-content .trending .content .trending-group h5{
+  color: var(--text-color);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.app-content .trending .group{
+
+  margin-top: 15px;
+  border-radius: 5px;
+  background-color: var(--trending);
+  border-left: 17px solid #131414;
+}
+
+.app-content .trending-group .group-message-container{
+  background-color: var(--sidebar-anchor-color);
+  border-radius: 5px;
+  margin-top: 5px;
+  padding: 8px 10px;
+  color: var(--text-color);
+}
+
+.app-content .trending-group .group-message-container .group-messages .group-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.app-content .trending-group .group-message-container .group-messages .time {
+  background-color: var(--input-theme);
+  color: var(--text-gray);
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-top: 3px;
+}
+
+
+.app-content .trending-group .group-message-container small{
+  color: var(--text-gray);
+}
+
+.app-content .trending-group .community p{
+  color:var(--text-color);
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.app-content .trending-group .community small{
+  color: var(--text-gray);
+}
+
+.app-content .trending-group .community img{
+  border-radius: 5px;
+}
+
+.app-content .trending-group .community .menu-item a{
+  display: block;
+  margin: 10px 0px;
+  width: 100%;
+  font-size: 14px;
+  padding: 14px;
+  background-color: var(--sidebar-anchor-color);
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--theme-button);
+  text-align: center;
+}
+
+.app-content .posted-content {
+  background-color: var(--sidebar);
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  margin-right: 8px;
+}
+
+.app-content .posted-content .name{
+  color: var(--text-color);
+  font-size: 13px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.app-content .posted-content .time{
+  background-color: var(--input-theme);
+  color: var(--text-gray);
+  padding: 2px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 20px;
+}
+.app-content .posted-content .time a{
+  color: var(--theme-button);
+}
+
+.app-content .posted-content .actions i{
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.app-content .posted-content .text-content{
+  color: var(--text-color);
+  font-size: 13px;
+  margin-top: 10px;
+} 
+
+.app-content .posted-content .image-content img{
+  border-radius: 5px;
+}
+.app-content .posted-content  .menu-item a{
+  display: flex;
+  margin: 10px 0px;
+
+  font-size: 13px;
+  padding: 10px;
+  background-color: var(--sidebar-anchor-color);
+  border-radius: 5px;
+  color: var(--sidebar-anchor-hover-color);
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+   text-decoration: none;
+ 
+}
+
+.app-content .posted-content  .menu-item a:hover{
+  background-color: var(--theme-button);
+  box-shadow: 2px 2px 5px rgba(76, 206, 242, 0.2),
+  /* Top left corner shadow */ -2px 2px 5px rgba(76, 206, 242, 0.2),
+  /* Top right corner shadow */ -2px -2px 5px rgba(76, 206, 242, 0.2),
+  /* Bottom right corner shadow */ 2px -2px 5px rgba(76, 206, 242, 0.2);
+}
+
+.app-content .posted-content  .menu-item .menu-count{
+  background-color: var(--input-theme);
+  padding: 3px 8px;
+  margin-left: 10px;
+  border-radius: 5px;
+}
+
+.app-content .posted-content button{
+  background-color: var(--theme-button);
+  margin-left: 5px;
+  border-radius: 5px;
+  padding: 0px 10px;
+  font-weight: bold;
+  font-size: 14px;
+  color: white;
+}
+
+.app-content .posted-content button:hover{
+  box-shadow: 2px 2px 5px rgba(76, 206, 242, 0.2),
+  /* Top left corner shadow */ -2px 2px 5px rgba(76, 206, 242, 0.2),
+  /* Top right corner shadow */ -2px -2px 5px rgba(76, 206, 242, 0.2),
+  /* Bottom right corner shadow */ 2px -2px 5px rgba(76, 206, 242, 0.2);
+}
+
+.app-content .posted-content .post{
+  background-color: var(--input-theme);
+}
+
+.app-content .posted-content .comment{
+  background-color: var(--sidebar-anchor-color);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.app-content .posted-content .comment small{
+  color: var(--text-gray);
+  font-size: 13px;
+}
+
+.app-content .posted-content .comment a{
+  color: var(--text-color);
+  text-decoration: none;
+  margin-top: 9px;
+  margin-left: 8px;
+  font-weight: bold;
+}
+
+
